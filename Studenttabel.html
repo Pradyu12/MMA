@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<script type="text/javascript"> function validate()
+{
+if(document.getElementById('Student_Name').value=="")
+{
+alert("Please Enter the Name of the Student"); return false;
+}
+elseif(document.getElementById('Gender').checked!=true)
+{
+alert("Please Select Gender"); return false;
+}
+
+elseif(document.getElementById('Address').value=="")
+{
+alert("Please Enter Student Address"); return false;
+}
+elseif(document.getElementById('birthday').value=="")
+{
+alert("Please Enter Student birthday"); return false;
+}
+elseif(document.getElementById('Religion').checked!=true)
+{
+alert("Please Select Any Religion"); return false;
+}
+elseif(document.getElementById('Contact_Number').value=="")
+{
+alert("Please Enter the Contact Number"); return false;
+}
+elseif(document.getElementById('email').value=="")
+{
+alert("Please Enter The Correct Email id"); return false;
+}
+
+elseif
+
+{
+alert("Form Submitted Successfully"); return true;
+}
+}
+</script>
+</head>
+<body>
+<form on submit="return validate()">
+<table border="2px"align="center">
+<tr>
+<th colspan="2">Student Registration</th>
+</tr>
+<tr>
+<td>Name:
+</td>
+<td>
+<input type="text" name="Student_Name" id="Student_Name" placeholder="Enter Your Name">
+</td>
+</tr>
+<tr>
+<td>Gender:
+</td>
+<td>
+<input type="radio"name="gender"id="Gender">Male
+<input type="radio"name="gender"id="Gender">Female
+</td>
+</tr>
+
+<tr>
+<td>Address:
+</td>
+<td>
+<text area name="Address"rows="4"cols="30"id="Address" placeholder="Enter Your Address"></text area>
+</td>
+</tr>
+<tr>
+<td>DOB:
+</td>
+<td>
+<input type="date"id="birthday"name="birthday">
+</td>
+</tr>
+<tr>
+<td>Religion:
+</td>
+<td>
+<input type="radio"name="Religion"id="Religion">Hindu
+ 
+<input type="radio" name="Religion">Muslim
+<input type="radio" name="Religion">Christian
+</td>
+</tr>
+<tr>
+<td>Contact_Number:
+</td>
+<td>
+<input type="text"id="Contact_Number"name="Contact_Number" max length="10"placeholder="Enter Your Contact Number">
+</td>
+</tr>
+<tr>
+<td>E-Mail ID:
+</td>
+<td>
+<input type="text" id="email" name="email" placeholder="Enter Your E-mail ID">
+</td>
+</tr>
+<td>
+<input type="submit" value="Submit">
+<input type="Reset" value="Reset">
+</td>
+</table>
+</form>
+</body>
+</html>
