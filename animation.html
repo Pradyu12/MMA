@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #circle {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        border-radius: 50%;
+        position: relative;
+        animation: mymove 5s infinite;  /* Fixed: Added space between animation name and duration */
+    }
+
+    @keyframes mymove {  /* Fixed: Added space between @keyframes and animation name */
+        from { top: 0px; }
+        to { top: 200px; }
+    }
+</style>
+</head>
+<body>
+    <div id="circle"></div>  <!-- Fixed: Removed space in "divid" -->
+</body>
+</html>
